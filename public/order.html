@@ -11,6 +11,16 @@
   </head>
 
   <body>
+    <div class="modal">
+      <h3>Want to Save 10% on Your First Cake Purchase?! Enter your email here, and join the cake club!</h3>
+      <div>
+        <input type="text">
+      </div>
+      <div>
+        <button class="margin-top--small modal-button">JOIN THE CAKE CLUB!</button>
+      </div>
+    </div>
+
     <div class="content order">
       <div class="header flex">
         <i class="hamburger fas fa-bars"></i>
@@ -25,20 +35,20 @@
         <i class="close fas fa-times"></i>
       
         <a href="landing.html">
-          <h1 class="logo">The Custom Cakery</h1>
+          <h2 class="logo">The Custom Cakery</h2>
         </a>
       
       </div>
       <div class="form-wrapper">
         <form>
           <div>Name: </div>
-          <input type="text">
+          <input required type="text">
           <div>Address:</div>
-          <input type="text">
+          <input required type="text">
           <div>Email Address:</div>
-          <input type="text">
+          <input required type="text">
           <div>Phone Number:</div>
-          <input type="text">
+          <input required type="text">
           <div>Desired Cake</div>
           <input type="radio" name="cake">Whole Cake
           <input type="radio" name="cake">1/2 Dozen Cupcakes
@@ -88,7 +98,7 @@
           </div>
           <div>Desired Pickup Date <br>(*note this is desired only and is not a confirmation, we will email you with details or
             contact you if more information is required regarding your cake.</div>
-          <input type="text">
+          <input required type="text">
           <div>
             <button>Submit Form</button>
           </div>
@@ -103,6 +113,7 @@
         <a href=""><i class="fab fa-instagram"></i></a>
         <a href=""><i class="fab fa-facebook-square"></i></a>
         <a href=""><i class="fas fa-envelope-open"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
       </div>
     </div>
   <script type="text/javascript" src="../main.js"></script>
