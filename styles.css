@@ -21,6 +21,10 @@ form {
   text-align: center;
 }
 
+input:focus {
+  outline: none!important;
+}
+
 textarea {
   margin-top: 10px;
 }
