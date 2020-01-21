@@ -1,99 +1,110 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>The Custom Cakery</title>
-  <link rel="stylesheet" href="../styles.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>The Custom Cakery</title>
+    <link rel="stylesheet" href="../styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  </head>
 
-<body>
-  <div class="content">
-    <div class="header flex">
-      <a href="landing.html">
-        <h1 class="logo">The Custom Cakery</h1>
-      </a>
-      <div class="links">
-        <a href="landing.html">&bull; Home</a>
-        <a href="order.html">&bull; Order a Cake</a>
-        <a href="gallery.html">&bull; The Gallery</a>
+  <body>
+    <div class="content order">
+      <div class="header flex">
+        <i class="hamburger fas fa-bars"></i>
+        <div class="menu">
+          <div class="links">
+            <h5>MENU</h5>
+            <a href="landing.html">&bull; Home</a>
+            <a href="order.html">&bull; Order a Cake</a>
+            <a href="gallery.html">&bull; The Gallery</a>
+          </div>
+        </div>
+        <i class="close fas fa-times"></i>
+      
+        <a href="landing.html">
+          <h1 class="logo">The Custom Cakery</h1>
+        </a>
+      
+      </div>
+      <div class="form-wrapper">
+        <form>
+          <div>Name: </div>
+          <input type="text">
+          <div>Address:</div>
+          <input type="text">
+          <div>Email Address:</div>
+          <input type="text">
+          <div>Phone Number:</div>
+          <input type="text">
+          <div>Desired Cake</div>
+          <input type="radio" name="cake">Whole Cake
+          <input type="radio" name="cake">1/2 Dozen Cupcakes
+          <input type="radio" name="cake">1 Dozen Cupcakes
+          <input type="radio" name="cake" checked>Other
+          <div>Cake Shape (excludes cupcakes)</div>
+          <input type="radio" name="shape">Circle
+          <input type="radio" name="shape">Square
+          <input type="radio" name="shape">Rectangle
+          <input type="radio" name="shape" checked>Other
+          <div>Do You Want Writing?</div>
+          <input type="radio" name="words" checked>Yes
+          <input type="radio" name="words">No
+          <div>If you selected "writing," please indicate text here: </div>
+          <input type="text" placeholder="cake text">
+          <div>Flavor(s)</div>
+          <input type="checkbox" checked value="chocolate">Chocolate
+          <input type="checkbox" checked value="vanilla">Vanilla
+          <input type="checkbox" checked value="fruit">Fruit
+          <input type="checkbox" checked value="other">Other
+          <div>Filling(s)</div>
+          <input type="checkbox" checked value="vanilla">Vanilla
+          <input type="checkbox" checked value="chocolate">Chocolate
+          <input type="checkbox" checked value="fruit">Fruit
+          <input type="checkbox" checked value="other">Other
+          <div>Frosting(s)</div>
+          <input type="checkbox" checked value="fruit">Fruit
+          <input type="checkbox" checked value="chocolate">Chocolate
+          <input type="checkbox" checked value="vanilla">Vanilla
+          <input type="checkbox" checked value="other">Other
+          <div>Topping(s)</div>
+          <input type="checkbox" checked value="chocolate">Chocolate Shavings
+          <input type="checkbox" checked value="vanilla">Sprinkles
+          <input type="checkbox" checked value="fruit">Fruit
+          <input type="checkbox" checked value="other">Other
+          <div>Approx. How Many People Should Cake Feed?</div>
+          <select name="" id="">
+            <option value="1-10">1 - 10</option>
+            <option value="10-20">10 - 20</option>
+            <option value="10-20">20 - 30</option>
+            <option value="10-20">30 - 40</option>
+            <option value="40-50">40 - 50</option>
+            <option value="50+">50+</option>
+          </select>
+          <div>
+            <textarea name="" id="" cols="30" rows="10">Please Provide Details if Selected "Other" Anywhere on Form</textarea>
+          </div>
+          <div>Desired Pickup Date <br>(*note this is desired only and is not a confirmation, we will email you with details or
+            contact you if more information is required regarding your cake.</div>
+          <input type="text">
+          <div>
+            <button>Submit Form</button>
+          </div>
+          <div class="subtext margin-top--small">All fields required!</div>
+        </form>
       </div>
     </div>
 
-    <form>
-      <div>Name: </div>
-      <input type="text">
-      <div>Address:</div>
-      <input type="text"> 
-      <div>Email Address:</div>
-      <input type="text">
-      <div>Phone Number:</div>
-      <input type="text">
-      <div>Desired Cake</div>
-      <input type="radio" name="cake">Whole Cake
-      <input type="radio" name="cake">1/2 Dozen Cupcakes
-      <input type="radio" name="cake">1 Dozen Cupcakes
-      <input type="radio" name="cake">Other
-      <div>Cake Shape (excludes cupcakes)</div>
-      <input type="radio" name="shape">Circle
-      <input type="radio" name="shape">Square
-      <input type="radio" name="shape">Rectangle
-      <input type="radio" name="shape">Other
-      <div>Do You Want Writing?</div>
-      <input type="radio" name="words">Yes
-      <input type="radio" name="words">No
-      <div>If you selected "writing," please indicate text here: </div>
-      <input type="text" placeholder="cake text">
-      <div>Flavor(s)</div>
-      <input type="checkbox" value="chocolate">Chocolate
-      <input type="checkbox" value="vanilla">Vanilla
-      <input type="checkbox" value="fruit">Fruit
-      <input type="checkbox" checked value="other">Other
-      <div>Filling(s)</div>
-      <input type="checkbox" value="chocolate">Chocolate
-      <input type="checkbox" value="vanilla">Vanilla
-      <input type="checkbox" value="fruit">Fruit
-      <input type="checkbox" checked value="other">Other
-      <div>Frosting(s)</div>
-      <input type="checkbox" value="chocolate">Chocolate
-      <input type="checkbox" value="vanilla">Vanilla
-      <input type="checkbox" value="fruit">Fruit
-      <input type="checkbox" checked value="other">Other
-      <div>Topping(s)</div>
-      <input type="checkbox" value="chocolate">Chocolate Shavings
-      <input type="checkbox" value="vanilla">Sprinkles
-      <input type="checkbox" value="fruit">Fruit
-      <input type="checkbox" checked value="other">Other
-      <div>Approx. How Many People Should Cake Feed?</div>
-      <select name="" id="">
-        <option value="1-10">1 - 10</option>
-        <option value="10-20">10 - 20</option>
-        <option value="10-20">20 - 30</option>
-        <option value="10-20">30 - 40</option>
-        <option value="40-50">40 - 50</option>
-        <option value="50+">50+</option>
-      </select>
+    <div class="footer">
+      <div>Contact Us</div>
       <div>
-        <textarea name="" id="" cols="30" rows="10">Please Provide Details if Selected "Other" Anywhere on Form</textarea>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fas fa-envelope-open"></i></a>
       </div>
-      <div>Desired Pickup Date <br>(*note this is desired only and is not a confirmation, we will email you with details or contact you if more information is required regarding your cake.</div>
-      <input type="text">
-
-      <button>Submit Form</button>
-    </form>
-
-  </div>
-  <div class="footer">
-    <div>Contact Us</div>
-    <div>
-      <a href=""><i class="fab fa-instagram"></i></a>
-      <a href=""><i class="fab fa-facebook-square"></i></a>
-      <a href=""><i class="fas fa-envelope-open"></i></a>
     </div>
-  </div>
-</body>
-
+  <script type="text/javascript" src="../main.js"></script>
+  </body>
 </html>
