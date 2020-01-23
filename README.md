@@ -10,7 +10,9 @@ Your job is to make The Custom Cakery acccessible and responsive. Don't be afrai
 - Use a screenreader to navigate the site and fix areas of confusion 
 - Go through the site considering four areas of accessibility concern (visual, auditory, physical and cognitive) 
 
-## A successful finished project should have:
+## Evaluation/Rubric
+
+### Pass
 - 100% passing accessibility audit 
 - Fully tabbable
 - Content is readable and looks good on all screen sizes
