@@ -13,4 +13,5 @@ Your job is to make The Custom Cakery acccessible and responsive. Don't be afrai
 ## A successful finished project should have:
 - 100% passing accessibility audit 
 - Fully tabbable
+- Content is readable and looks good on all screen sizes
 
