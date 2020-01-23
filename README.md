@@ -4,7 +4,7 @@ The Custom Cakery is a custom cake selling business. They have a website consist
 
 Your job is to make The Custom Cakery acccessible and responsive. Don't be afraid to make design and/or content changes, but make sure to stick to the overall theme and design of the website (colors, fonts, vibe, etc.).  
 
-## Goals and Tips
+## Strategies for Success
 
 - Think about where ARIA should be utilized
 - Use a screenreader to navigate the site and fix areas of confusion 
