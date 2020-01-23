@@ -8,6 +8,16 @@ body {
   align-items: space-between;
 }
 
+body.modal-active::after {
+  content: '';
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -17,14 +27,10 @@ html, body {
   height: 100%;
 }
 
-.form-wrapper {
-  margin: 0 auto;
-  width: 450px;
-}
-
 form {
   background-color: rgba(255, 255, 255, .7);
   margin-bottom: 25px;
+  padding: 25px;
   text-align: center;
   width: 100%;
 }
@@ -42,10 +48,15 @@ textarea {
 }
 
 button {
+  background-color: #333333;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 5px 15px;
+  text-transform: uppercase;
   display: block;
   margin: 0 auto;
 }
-
 
 a:focus {
   outline: none !important;
@@ -57,20 +68,17 @@ h1 {
   margin: 45px 0;
 }
 
+h4 {
+  font-size: 40px;
+  text-align: center;
+}
+
 .description-text {
   max-width: 500px;
 }
 
 .content {
   flex: 1 0 auto;
-}
-
-.footer {
-  background-color: #ffcccc;
-  padding: 20px 0;
-  text-align: center;
-  height: 50px;
-  flex-shrink: 0;
 }
 
 /********************************* HEADER *********************************/
@@ -124,6 +132,16 @@ h1 {
   padding: 25px;
 }
 
+/********************************* FOOTER *********************************/
+
+.footer {
+  background-color: #ffcccc;
+  padding: 20px 0;
+  text-align: center;
+  height: 50px;
+  flex-shrink: 0;
+}
+
 /********************************* ORDER PAGE *********************************/
 
 .order {
@@ -132,7 +150,7 @@ h1 {
 }
 
 .modal {
-  background-color: white;
+  background-color: #ffffff;
   display: none;
   position: absolute;
   max-width: 300px;
@@ -143,8 +161,35 @@ h1 {
   z-index: 2;
 }
 
+.modal--close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 .modal.active {
   display: block;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  width: 450px;
+}
+
+/********************************* GALLERY PAGE *********************************/
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+   flex: 1 0 21%;
+   max-width: 25%;
+}
+
+.gallery-item img {
+  width: 100%;
 }
 
 /********************************* HELPERS *********************************/

@@ -23,16 +23,22 @@ if (document.querySelector(".landing-image")) {
 
 window.setTimeout(() => {
   document.querySelector(".modal").classList.add("active")
-}, 1000);
+  document.querySelector("body").classList.add("modal-active")
+}, 5000);
 
 const hideModal = () => {
   document.querySelector(".modal").classList.remove("active")
+  document.querySelector("body").classList.remove("modal-active")
 }
 
 window.setTimeout(() => {
   hideModal()
-}, 4000);
+}, 10000);
 
 document.querySelector(".modal-button").addEventListener("click", () => {
+  hideModal()
+})
+
+document.querySelector(".modal--close").addEventListener("click", () => {
   hideModal()
 })
