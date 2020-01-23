@@ -1,4 +1,4 @@
-# The Custom Cakery
+# 🎂The Custom Cakery
 
 The Custom Cakery is a custom cake selling business. They have a website consisting of a home, order and gallery page. The Custom Cakery is overall happy with the look and feel of their website, but are concerned that not all of their customers are able to access it and place cake orders.
 
