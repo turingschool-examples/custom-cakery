@@ -8,6 +8,8 @@ Your job is to make The Custom Cakery acccessible and responsive. Don't be afrai
 
 - Think about where ARIA should be utilized
 - Use a screenreader to navigate the site and fix areas of confusion 
+- Tab through each page - could you interact with this site using only a keyboard?
+- Find a tool to help you keep the color contrast in different areas of the site 
 - Go through the site considering four areas of accessibility concern (visual, auditory, physical and cognitive) 
 
 ## Evaluation/Rubric
