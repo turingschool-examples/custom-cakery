@@ -11,6 +11,7 @@ Your job is to make The Custom Cakery acccessible and responsive. Don't be afrai
 - Tab through each page - could you interact with this site using only a keyboard?
 - Find a tool to help you keep the color contrast in different areas of the site 
 - Go through the site considering four areas of accessibility concern (visual, auditory, physical and cognitive) 
+- View the site in different screen sizes
 
 ## Evaluation/Rubric
 
@@ -18,5 +19,5 @@ Your job is to make The Custom Cakery acccessible and responsive. Don't be afrai
 - 100% passing accessibility audit 
 - Fully tabbable
 - Site can be fully navigated using a screen reader
-- Content is readable and looks good on all screen sizes
+- Content is readable, usuable and looks good on all screen sizes
 
