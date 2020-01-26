@@ -1,11 +1,14 @@
-body {
-  color: black;
+/********************************* NATIVE ELS & GENERAL STYLES *********************************/
+
+html, body {
+  color: #576574;
   font-size: 14px;
   margin: 0;
   font-family: 'Josefin Slab', serif;
   display: flex;
   flex-direction: column;
   align-items: space-between;
+  height: 100%;
 }
 
 body.modal-active::after {
@@ -19,32 +22,28 @@ body.modal-active::after {
 }
 
 a {
-  color: black;
+  color: #576574;
   text-decoration: none;
 }
 
-html, body {
-  height: 100%;
+a:focus {
+  outline: none !important;
 }
 
 form {
   background-color: rgba(255, 255, 255, .7);
   margin-bottom: 25px;
   padding: 25px;
-  text-align: center;
-  width: 100%;
+  width: 600px;
+  margin: 40px auto;
 }
 
- input[type="text"] {
+input[type="text"], input[type="number"], textarea {
   width: 100%;
 }
 
 input:focus {
   outline: none!important;
-}
-
-textarea {
-  margin-top: 10px;
 }
 
 button {
@@ -56,10 +55,6 @@ button {
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
-}
-
-a:focus {
-  outline: none !important;
 }
 
 h1 {
@@ -82,12 +77,6 @@ h4 {
 }
 
 /********************************* HEADER *********************************/
-
-.logo {
-  font-family: 'Amatic SC', cursive;
-  font-size: 65px;
-  line-height: .1;
-}
 
 .header {
   background-color: #333333;
@@ -117,6 +106,8 @@ h4 {
 .menu {
   display: none;
   position: absolute;
+  height: 50%;
+  width: 50%;
   top: 0;
   left: 0;
   background-color: #ffcccc;
@@ -132,6 +123,12 @@ h4 {
   padding: 25px;
 }
 
+.cake-review {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
 /********************************* FOOTER *********************************/
 
 .footer {
@@ -141,6 +138,13 @@ h4 {
   height: 50px;
   flex-shrink: 0;
 }
+
+/********************************* LANDING PAGE *********************************/
+
+.medium-image-text img {
+  width: 400px;
+}
+
 
 /********************************* ORDER PAGE *********************************/
 
@@ -161,7 +165,7 @@ h4 {
   z-index: 2;
 }
 
-.modal--close {
+.modal-close {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -169,11 +173,6 @@ h4 {
 
 .modal.active {
   display: block;
-}
-
-.form-wrapper {
-  margin: 0 auto;
-  width: 450px;
 }
 
 /********************************* GALLERY PAGE *********************************/
@@ -224,11 +223,14 @@ h4 {
   text-align: center;
 }
 
+.green {
+  color: #27ae60;
+}
 
 .medium-image {
+  border: dotted 20px #ffcccc;
   display: block;
-  width: 100%;
-  max-width: 600px;
+  width: 600px;
 }
 
 .subtext {

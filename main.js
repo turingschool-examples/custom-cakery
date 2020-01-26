@@ -1,6 +1,8 @@
 const menu = document.querySelector(".menu");
 const close = document.querySelector(".close");
 
+/********************************* HEADER *********************************/
+
 document.querySelector(".hamburger").addEventListener("click", () => {
   if (!menu.classList.contains("active")) {
     menu.classList.add("active");
@@ -15,30 +17,57 @@ document.querySelector(".close").addEventListener("click", () => {
   }
 });
 
-if (document.querySelector(".landing-image")) {
-    document.querySelector(".landing-image").addEventListener("click", () => {
+/********************************* LANDING PAGE *********************************/
+
+
+if (document.querySelector("#landing")) {
+  document.querySelector(".landing-image").addEventListener("click", () => {
     window.location.href = 'order.html'
   })
 }
 
-window.setTimeout(() => {
-  document.querySelector(".modal").classList.add("active")
-  document.querySelector("body").classList.add("modal-active")
-}, 5000);
+/********************************* ORDER PAGE *********************************/
 
-const hideModal = () => {
-  document.querySelector(".modal").classList.remove("active")
-  document.querySelector("body").classList.remove("modal-active")
+if (document.querySelector("#order")) {
+  let body = document.querySelector("body");
+  let modal = document.querySelector(".modal");
+
+  window.setTimeout(() => {
+   showModal();
+  }, 5000);
+
+  const hideModal = () => {
+   modal.classList.remove("active")
+   body.classList.remove("modal-active")
+  }
+
+  const showModal = () => {
+    modal.classList.add("active")
+    body.classList.add("modal-active")
+  }
+
+  document.querySelector(".modal-button").addEventListener("click", () => {
+    if (document.querySelector(".modal-email-field").value) {
+      document.querySelector(".modal-content").innerHTML = 
+      "<h3>Your coupon code is <span class='green'>cakelovers</span></h3>"
+    }
+  })
+
+  document.querySelector(".modal-close").addEventListener("click", () => {
+    hideModal()
+  })
+
+  const validateForm = () => {
+    alert("Thanks for ordering a cake with us!")
+  }
+
+  document.querySelector("form").addEventListener("submit", () => {
+    validateForm()
+  })
 }
 
-window.setTimeout(() => {
-  hideModal()
-}, 10000);
 
-document.querySelector(".modal-button").addEventListener("click", () => {
-  hideModal()
-})
 
-document.querySelector(".modal--close").addEventListener("click", () => {
-  hideModal()
-})
+
+
+
