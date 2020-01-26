@@ -65,9 +65,3 @@ if (document.querySelector("#order")) {
     validateForm()
   })
 }
-
-
-
-
-
-
