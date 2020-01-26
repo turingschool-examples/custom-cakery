@@ -17,7 +17,7 @@ Your job is to make The Custom Cakery acccessible and responsive. Don't be afrai
 
 ### Pass
 - 100% passing accessibility audit 
-- Fully tabbable
+- Site can be navigated using a keyboard only 
 - Site can be fully navigated using a screen reader
 - Content is readable, usuable and looks good on all screen sizes
 
