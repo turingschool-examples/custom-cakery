@@ -6,6 +6,8 @@ Your job is to make The Custom Cakery accessible and responsive. Don't be afraid
 
 ## Strategies for Success
 
+Treat this like a take home code challenge. Give yourself three hours to work on it over the weekend, then submit.
+
 - Think about where ARIA should be utilized
 - Use a screenreader to navigate the site and fix areas of confusion
 - Tab through each page - could you interact with this site using only a keyboard?
@@ -26,10 +28,13 @@ You should be able to viewed the deployed version of your code at:
 [your-gh-username].github.io/custom-cakery/public/landing.html
 ```
 
+## Submission
+Submit your project <a href="https://forms.gle/XQpLLhwDxPovSEtw5" target="\__blank">here</a> by 9AM on Tuesday, Feb 18th.
+
 ## Evaluation/Rubric
 
 ### Pass
 - 100% passing accessibility audit (you will need to have your project deployed to GH pages in order to run an audit)
 - Site can be navigated using a keyboard only
 - Site can be fully navigated using a screen reader
-- Content is readable, usuable and looks good on all screen sizes
+- Content is readable, usable and looks good on all screen sizes
