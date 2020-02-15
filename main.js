@@ -6,6 +6,7 @@ const close = document.querySelector(".close");
 document.querySelector(".hamburger").addEventListener("click", () => {
   if (!menu.classList.contains("active")) {
     menu.classList.add("active");
+    menu.setAttribute("aria-expanded", 'true')
     close.classList.add("active")
   }
 });
@@ -13,6 +14,7 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 document.querySelector(".close").addEventListener("click", () => {
   if (close.classList.contains("active")) {
     close.classList.remove("active");
+    menu.setAttribute("aria-expanded", 'false')
     menu.classList.remove("active")
   }
 });
