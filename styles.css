@@ -26,10 +26,6 @@ a {
   text-decoration: none;
 }
 
-a:focus {
-  outline: none !important;
-}
-
 form {
   background-color: rgba(255, 255, 255, .7);
   margin-bottom: 25px;
@@ -42,9 +38,7 @@ input[type="text"], input[type="number"], textarea {
   width: 100%;
 }
 
-input:focus {
-  outline: none!important;
-}
+
 
 button {
   background-color: #333333;
@@ -143,6 +137,10 @@ h4 {
 
 .medium-image-text img {
   width: 400px;
+}
+
+.landing-image {
+  cursor: pointer;
 }
 
 /********************************* ORDER PAGE *********************************/
