@@ -72,12 +72,17 @@ h4 {
 
 /********************************* HEADER *********************************/
 
+
 .header {
   background-color: #333333;
-  padding: 5px 25px;
   display: flex;
   flex-direction: column;
   margin-bottom: 65px;
+}
+
+.logo {
+  color: white;
+  font-size: 6em;
 }
 
 .hamburger {
@@ -124,6 +129,13 @@ h4 {
 }
 
 /********************************* FOOTER *********************************/
+.contact-head {
+  font-size: 2em;
+  color: black;
+  background-color: #ffcccc;
+
+}
+
 
 .footer {
   background-color: #ffcccc;
@@ -133,6 +145,8 @@ h4 {
   flex-shrink: 0;
 }
 
+
+
 /********************************* LANDING PAGE *********************************/
 
 .medium-image-text img {
@@ -141,6 +155,10 @@ h4 {
 
 .landing-image {
   cursor: pointer;
+}
+
+.description {
+  font-size: 1.5em;
 }
 
 /********************************* ORDER PAGE *********************************/
@@ -238,3 +256,6 @@ h4 {
 .margin-top--small {
   margin-top: 15px;
 }
+
+/********************************* MOBILE *********************************/
+
