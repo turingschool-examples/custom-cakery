@@ -45,8 +45,14 @@ if (document.querySelector("#order")) {
 
   const showModal = () => {
     modal.classList.add("active")
-    body.classList.add("modal-active")
+    body.classList.add("modal-active")    
   }
+
+  document.addEventListener("keyup", (event) =>{
+    if (event.keyCode == 27){
+      hideModal()
+    }
+  });
 
   document.querySelector(".modal-button").addEventListener("click", () => {
     if (document.querySelector(".modal-email-field").value) {
