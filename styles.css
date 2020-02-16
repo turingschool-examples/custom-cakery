@@ -162,10 +162,22 @@ h4 {
 }
 
 /********************************* ORDER PAGE *********************************/
+.order-form {
+  background-color: rgb(0, 0, 0, 0.8);
+  color: white;
+}
 
-.order {
-  background-image: url('./images/cupcakes.jpeg');
-  background-size: 15%;
+label, input {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+input {
+  height: 1.5em;
+}
+
+.new-block {
+  display: block;
 }
 
 .modal {
@@ -190,6 +202,9 @@ h4 {
   display: block;
 }
 
+.form-submit {
+  border: 1px solid white;
+}
 /********************************* GALLERY PAGE *********************************/
 
 .gallery-wrapper {
@@ -249,8 +264,9 @@ h4 {
 }
 
 .subtext {
-  color: #95a5a6;
+  color: #eeeeee;
   font-size: 10px;
+  margin-bottom: 20px;
 }
 
 .margin-top--small {

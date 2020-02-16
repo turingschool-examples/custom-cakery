@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -36,54 +36,55 @@
         </div>
         <i class="close fas fa-times"></i>
         <a href="landing.html">
-          <h2 class="logo"><img src="../images/cake_logo.png"></h2>
+          <h1 class="logo">The Custom Cakery</h2>
         </a>
       </div>
-      <form>
-        <div>Name: </div>
-        <input required type="text">
-        <div>Address:</div>
-        <input required type="text">
-        <div>Email Address:</div>
-        <input required type="text">
-        <div>Phone Number:</div>
-        <input required type="number">
-        <div>Desired Cake</div>
+      <form class="order-form">
+        <div class="subtext margin-top--small">All fields required!</div>
+        <label for="Name">Name:</label>
+        <input required type="text" name="name">
+        <label for="address">Address:</label>
+        <input required type="text" name="address">
+        <label for="email">Email Address:</label>
+        <input required type="text" name="email">
+        <label for="phone number">Phone Number:</label>
+        <input required type="number" name="phone number">
+        <label for="desired cake" class="new-block">Desired Cake</label>
         <input type="radio" name="cake">Whole Cake
         <input type="radio" name="cake">1/2 Dozen Cupcakes
         <input type="radio" name="cake">1 Dozen Cupcakes
         <input type="radio" name="cake" checked>Other
-        <div>Cake Shape (excludes cupcakes)</div>
+        <label for="cake size" class="new-block">Cake Shape (excludes cupcakes)</label>
         <input type="radio" name="shape">Circle
         <input type="radio" name="shape">Square
         <input type="radio" name="shape">Rectangle
         <input type="radio" name="shape" checked>Other
-        <div>Do You Want Writing?</div>
+        <label for="do you want writing?" class="new-block">Do You Want Writing?</label>
         <input type="radio" name="words" checked>Yes
         <input type="radio" name="words">No
-        <div>If you selected "writing," please indicate text here: </div>
+        <label for="writing" class="new-block">If you selected "writing," please indicate text here: </label>
         <input type="text" placeholder="cake text">
-        <div>Flavor(s)</div>
+        <label for="flavors" class="new-block">Flavor(s)</label>
         <input type="checkbox" checked value="chocolate">Chocolate
         <input type="checkbox" checked value="vanilla">Vanilla
         <input type="checkbox" checked value="fruit">Fruit
         <input type="checkbox" checked value="other">Other
-        <div>Filling(s)</div>
+        <label for="fillings" class="new-block">Filling(s)</label>
         <input type="checkbox" checked value="vanilla">Vanilla
         <input type="checkbox" checked value="chocolate">Chocolate
         <input type="checkbox" checked value="fruit">Fruit
         <input type="checkbox" checked value="other">Other
-        <div>Frosting(s)</div>
+        <label for="frosting" class="new-block">Frosting(s)</label>
         <input type="checkbox" checked value="fruit">Fruit
         <input type="checkbox" checked value="chocolate">Chocolate
         <input type="checkbox" checked value="vanilla">Vanilla
         <input type="checkbox" checked value="other">Other
-        <div>Topping(s)</div>
+        <label for="toppings" class="new-block">Topping(s)</label>
         <input type="checkbox" checked value="chocolate">Chocolate Shavings
         <input type="checkbox" checked value="vanilla">Sprinkles
         <input type="checkbox" checked value="fruit">Fruit
         <input type="checkbox" checked value="other">Other
-        <div>Approx. How Many People Should Cake Feed?</div>
+        <label for="how many people should cake feed" class="new-block">Approx. How Many People Should Cake Feed?</label>
         <select name="" id="">
           <option value="1-10">1 - 10</option>
           <option value="10-20">10 - 20</option>
@@ -93,15 +94,15 @@
           <option value="50+">50+</option>
         </select>
         <div>
-          <textarea name="" id="" cols="30" rows="10">Please Provide Details if Selected "Other" Anywhere on Form</textarea>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Please Provide Details if Selected 'Other' Anywhere on Form"></textarea>
         </div>
-        <div>Desired Pickup Date <br>(*note this is desired only and is not a confirmation, we will email you with details or
-          contact you if more information is required regarding your cake.</div>
+        <label for="desired pickup date" class="new-block">Desired Pickup Date </label>
+        <p><br>(*note* this is desired only and is not a confirmation, we will email you with details or
+          contact you if more information is required regarding your cake.)</p>
         <input required type="number">
         <div>
           <button type="submit" class="form-submit">Submit Form</button>
         </div>
-        <div class="subtext margin-top--small">All fields required!</div>
       </form>
     </div>
     <div class="footer">
