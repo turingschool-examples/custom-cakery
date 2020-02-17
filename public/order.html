@@ -32,7 +32,7 @@
             <a href="order.html">&bull; Order a Cake</a>
             <a href="gallery.html">&bull; The Gallery</a>
           </div>
-          <img class="cake-review" src="../images/cake_review.png">
+          <img class="cake-review" src="../images/cake_review.png" alt="'beautiful and delicious cakes!' - a satisfied customer">
         </div>
         <i class="close fas fa-times"></i>
         <a href="landing.html">
@@ -41,49 +41,101 @@
       </div>
       <form class="order-form">
         <div class="subtext margin-top--small">All fields required!</div>
-        <label for="Name">Name:</label>
-        <input required type="text" name="name">
+        <label for="name">Name:</label>
+        <input required type="text" id="name">
         <label for="address">Address:</label>
-        <input required type="text" name="address">
+        <input required type="text" id="address">
         <label for="email">Email Address:</label>
-        <input required type="text" name="email">
+        <input required type="text" id="email">
         <label for="phone number">Phone Number:</label>
-        <input required type="number" name="phone number">
+        <input required type="number" id="phone number">
         <label for="desired cake" class="new-block">Desired Cake</label>
-        <input type="radio" name="cake">Whole Cake
-        <input type="radio" name="cake">1/2 Dozen Cupcakes
-        <input type="radio" name="cake">1 Dozen Cupcakes
-        <input type="radio" name="cake" checked>Other
+        <label for="whole-cake">
+        <input type="radio" id="whole-cake" name="cake">Whole Cake
+        </label>
+        <label for="half-dozen-cupcakes">
+        <input type="radio" id="half-dozen-cupcakes" name="cake">1/2 Dozen Cupcakes
+        </label>
+        <label for="dozen-cupcakes">
+        <input type="radio" id="dozen-cupcakes" name="cake">1 Dozen Cupcakes
+        </label>
+        <label for="other">
+        <input type="radio" id="other" name="cake">Other
+        </label>
         <label for="cake size" class="new-block">Cake Shape (excludes cupcakes)</label>
-        <input type="radio" name="shape">Circle
-        <input type="radio" name="shape">Square
-        <input type="radio" name="shape">Rectangle
-        <input type="radio" name="shape" checked>Other
+        <label for="circle">
+        <input type="radio" id="circle" name="shape">Circle
+        </label>
+        <label for="square">
+        <input type="radio" id="square" name="shape">Square
+        </label>
+        <label for="rectangle">
+        <input type="radio" id="rectangle" name="shape">Rectangle
+        </label>
+        <label for="other">
+        <input type="radio" id ="other" name="shape" checked>Other
+        </label>
         <label for="do you want writing?" class="new-block">Do You Want Writing?</label>
-        <input type="radio" name="words" checked>Yes
+        <label for="yes">
+        <input type="radio" id="yes" name="words" checked>Yes
+        </label>
+        <label for="no">
         <input type="radio" name="words">No
+        </label>
         <label for="writing" class="new-block">If you selected "writing," please indicate text here: </label>
         <input type="text" placeholder="cake text">
         <label for="flavors" class="new-block">Flavor(s)</label>
-        <input type="checkbox" checked value="chocolate">Chocolate
-        <input type="checkbox" checked value="vanilla">Vanilla
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="other">Other
+        <label for="chocolate">
+        <input type="checkbox" id="chocolate" checked value="chocolate">Chocolate
+        </label>
+        <label for="vanilla">
+          <input type="checkbox" id="vanilla" checked value="vanilla">Vanilla
+        </label>
+        <label for="fruit">
+          <input type="checkbox" id="fruit" checked value="fruit">Fruit
+        </label>
+        <label for="other">
+          <input type="checkbox" id="other" checked value="other">Other
+        </label>
         <label for="fillings" class="new-block">Filling(s)</label>
-        <input type="checkbox" checked value="vanilla">Vanilla
-        <input type="checkbox" checked value="chocolate">Chocolate
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="other">Other
+        <label for="vanilla">
+          <input type="checkbox" id="vanilla" checked value="vanilla">Vanilla
+        </label>
+        <label for="chocolate">
+          <input type="checkbox" id="chocolate" checked value="chocolate">Chocolate
+        </label>
+        <label for="fruit">
+          <input type="checkbox" id="fruit" checked value="fruit">Fruit
+        </label>
+        <label for="other">
+          <input type="checkbox" id="other" checked value="other">Other
+        </label>
         <label for="frosting" class="new-block">Frosting(s)</label>
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="chocolate">Chocolate
-        <input type="checkbox" checked value="vanilla">Vanilla
-        <input type="checkbox" checked value="other">Other
+        <label for="fruit">
+          <input type="checkbox" id="fruit" checked value="fruit">Fruit
+        </label>
+        <label for="chocolate">
+          <input type="checkbox" id="chocolate" checked value="chocolate">Chocolate
+        </label>
+        <label for="vanilla">
+          <input type="checkbox" id="vanilla" checked value="vanilla">Vanilla
+        </label>
+        <label for="other">
+          <input type="checkbox" id="other" checked value="other">Other
+        </label>
         <label for="toppings" class="new-block">Topping(s)</label>
-        <input type="checkbox" checked value="chocolate">Chocolate Shavings
-        <input type="checkbox" checked value="vanilla">Sprinkles
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="other">Other
+        <label for="chocolate-shavings">
+          <input type="checkbox" id="chocolate-shavings" checked value="chocolate-shavings">Chocolate Shavings
+        </label>
+        <label for="sprinkles">
+          <input type="checkbox" id="sprinkles" checked value="sprinkles">Sprinkles
+        </label>
+        <label for="fruit">
+          <input type="checkbox" id="fruit" checked value="fruit">Fruit
+        </label>
+        <label for="other">
+          <input type="checkbox" id="other" checked value="other">Other
+        </label>
         <label for="how many people should cake feed" class="new-block">Approx. How Many People Should Cake Feed?</label>
         <select name="" id="">
           <option value="1-10">1 - 10</option>
