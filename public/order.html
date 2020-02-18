@@ -13,7 +13,7 @@
 
 <body id="order">
   <div class="modal">
-    <i class="modal-close fas fa-times"></i>
+    <button class="modal-close fas fa-times"></button>
     <div class="modal-content">
       <h3>Want to Save 10% on Your First Cake Purchase?! Enter your email here, and join the cake club!</h3>
       <div class="input">
@@ -60,13 +60,19 @@
       <label for="other">Other</label>
       <input id='other' type="radio" name="cake" checked>Other
       <label for="cake-shape">Cake Shape (excludes cupcakes)</label>
-      <input type="radio" name="shape">Circle
-      <input type="radio" name="shape">Square
-      <input type="radio" name="shape">Rectangle
-      <input type="radio" name="shape" checked>Other
+            <label for='shape-circle'>circle</label>
+      <input type="radio" id = "shape-circle"name="shape">Circle
+            <label for='shape-Square'>Square</label>
+      <input type="radio" id = "shape-Square"name="shape">Square
+            <label for='shape-Rectangle'>Rectangle</label>
+      <input type="radio" id = "shape-Rectangle"name="shape">Rectangle
+            <label for='shape-other'>other shape</label>
+      <input type="radio" id = "shape-other" name="shape" checked>Other
       <div>Do You Want Writing?</div>
-      <input type="radio" name="words" checked>Yes
-      <input type="radio" name="words">No
+            <label for='yes'>chocolate</label>
+      <input type="radio" id = "yes" name="words" checked>Yes
+            <label for='nope'>none</label>
+      <input type="radio" name="words" id = "nope">No
       <label for="cake-text">If you selected "writing," please indicate text here: </label>
       <input type="text" id = 'cake-text' placeholder="cake text">
       <div>Flavor(s)</div>
@@ -75,22 +81,33 @@
       <input type="checkbox" checked value="fruit">Fruit
       <input type="checkbox" checked value="other">Other
       <div>Filling(s)</div>
-      <input type="checkbox" checked value="vanilla">Vanilla
-      <input type="checkbox" checked value="chocolate">Chocolate
-      <input type="checkbox" checked value="fruit">Fruit
-      <input type="checkbox" checked value="other">Other
+      <label for='filling-chocolate'>chocolate</label>
+      <input id='filling-chocolate' type="checkbox" checked value="vanilla">Vanilla
+      <label for='filling-vanilla'>vanilla </label>
+      <input id='filling-vanilla' type="checkbox" checked value="chocolate">Chocolate
+      <label for='filling-fruit'>fruit </label>
+      <input id='filling-fruit' type="checkbox" checked value="fruit">Fruit
+      <label for='filling-other'>other </label>
+      <input id='filling-other' type="checkbox" checked value="other">Other
       <div>Frosting(s)</div>
-      <input type="checkbox" checked value="fruit">Fruit
-      <input type="checkbox" checked value="chocolate">Chocolate
-      <input type="checkbox" checked value="vanilla">Vanilla
-      <input type="checkbox" checked value="other">Other
+      <label for='frosting-chocolate'>chocolate</label>
+      <input id='frosting-chocolate' type="checkbox" checked value="fruit">Fruit
+      <label for='frosting-vanilla'>vanilla </label>
+      <input id='frosting-vanilla' type="checkbox" checked value="chocolate">Chocolate
+      <label for='frosting-fruit'>fruit </label>
+      <input id='frosting-fruit' type="checkbox" checked value="vanilla">Vanilla
+      <label for='frosting-other'>other </label>
+      <input id='frosting-other' type="checkbox" checked value="other">Other
       <div>Topping(s)</div>
-      <input type="checkbox" checked value="chocolate">Chocolate Shavings
-      <input type="checkbox" checked value="vanilla">Sprinkles
-      <input type="checkbox" checked value="fruit">Fruit
-      <input type="checkbox" checked value="other">Other
-      <label for 'cake-num'>Approx. How Many People Should Cake Feed?</label>
-      <select name="Quantity of Cake" id="cake-num">
+      <label for='topping-chocolate'>chocolate</label>
+      <input id='topping-chocolate' type="checkbox" checked value="chocolate">Chocolate Shavings
+      <label for='topping-vanilla'>vanilla </label>
+      <input id='topping-vanilla' type="checkbox" checked value="vanilla">Sprinkles
+      <label for='topping-fruit'>fruit </label>
+      <input id='topping-fruit' type="checkbox" checked value="fruit">Fruit
+      <label for='topping-other'>other </label>
+      <input id='topping-other' type="checkbox" checked value="other">Other
+      <select name="Quantity of Cake">
         <option value="1-10">1 - 10</option>
         <option value="10-20">10 - 20</option>
         <option value="10-20">20 - 30</option>
@@ -99,13 +116,11 @@
         <option value="50+">50+</option>
       </select>
       <div>
-        <label for 'extra-details'>Approx. How Many People Should Cake Feed?</label>
         <textarea name="Extra Details" id="extra-details" cols="30" rows="10">Please Provide Details if Selected "Other" Anywhere on Form</textarea>
       </div>
       <div>Desired Pickup Date <br>(*note this is desired only and is not a confirmation, we will email you with details or
         contact you if more information is required regarding your cake.</div>
-      <label for 'date'>Date</label>
-      <input required type="number" id = 'date'>
+      <input required type="number" id='date'>
       <div>
         <button type="submit" class="form-submit">Submit Form</button>
       </div>
