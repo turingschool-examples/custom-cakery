@@ -28,10 +28,7 @@ You should be able to viewed the deployed version of your code at:
 [your-gh-username].github.io/custom-cakery/public/landing.html
 ```
 
-## Submission
-Submit your project <a href="https://forms.gle/XQpLLhwDxPovSEtw5" target="\__blank">here</a> by 9AM on Tuesday, Feb 18th.
-
-## Evaluation/Rubric
+## Evaluation/Rubric - To assess yourself
 
 ### Pass
 - 100% passing accessibility audit (you will need to have your project deployed to GH pages in order to run an audit)
